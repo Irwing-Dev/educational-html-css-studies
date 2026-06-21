@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabelas</title>
+    <style>
+        table {
+            width: 50vw;            
+            border-collapse: collapse;
+        }
+
+        th, td {
+            padding: 0.5em;
+            border: 0.1em solid black;
+        }
+
+        .populacao {
+            text-align: end;
+        }
+
+        tfoot tr td {
+            text-align: end;
+        }
+    </style>
+</head>
+<body>
+    
+    <h1>Primeira Tabela</h1>
+
+    <table>
+        <thead>
+            <tr> <!--Table row = linhas de tabela-->
+                <th>Estado</th> <!--Título da tabela, aacho que nem eu nem você sabemos qual a tradução dessa merda-->
+                <th>População</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>São Paulo</td> <!--Table datas = dados de tabela-->
+                <td class="populacao">21 000 000</td>
+            </tr>
+            <tr>
+                <td>Minas Gerais</td>
+                <td class="populacao">2 000 000</td>
+            </tr>
+            <tr>
+                <td>Rio de Janeiro</td>
+                <td class="populacao">13 000 000</td>
+        </tbody>
+        <tfoot>
+            <tr>
+            <th>Total de habitantes</th>
+                <td>210.147.125</td>
+            </tr>
+        </tfoot>
+    </table>
+
+</body>
+</html>
